@@ -16,16 +16,16 @@ gl.clearColor(0, 0, 1, 1); // Updated alpha value to 1
 gl.clear(gl.COLOR_BUFFER_BIT);
 
 // membuat data koordinat Lines
-// const points = [
-//   -0.5,0.5,
-//   0.5,-0.5,
-//   0.5,0.5,
-//   -0.5,-0.5,
-//   0.0,0.5,
-//   0.0,-0.5,
-//   -0.5,0.0,
-//   0.5,0.0
-// ];
+const points = [
+  -0.5,0.5,
+  0.5,-0.5,
+  0.5,0.5,
+  -0.5,-0.5,
+  0.0,0.5,
+  0.0,-0.5,
+  -0.5,0.0,
+  0.5,0.0
+];
 
 // membuat data koordinat Line_Loop
 // const points = [
@@ -37,15 +37,15 @@ gl.clear(gl.COLOR_BUFFER_BIT);
 // ];
 
 // membuat data koordinat Line_Strip
-const points = [
--0.5,0.5,
-0.2,-0.3,
--0.2,-0.7,
-0.0,-0.9,
-0.2,-0.7,
--0.2,-0.3,
-0.5,0.5
-];
+// const points = [
+// -0.5,0.5,
+// 0.2,-0.3,
+// -0.2,-0.7,
+// 0.0,-0.9,
+// 0.2,-0.7,
+// -0.2,-0.3,
+// 0.5,0.5
+// ];
 
 
 // Membuat buffer untuk data posisi titik
@@ -95,7 +95,7 @@ gl.enableVertexAttribArray(positionAttributeLocation);
 gl.vertexAttribPointer(positionAttributeLocation, 2, gl.FLOAT, false, 0, 0);
 
 // Menggambar titik
-// gl.drawArrays(gl.LINES, 0, 8);
+gl.drawArrays(gl.LINES, 0, 8);
 // gl.drawArrays(gl.LINE_LOOP, 0, 5);
-gl.drawArrays(gl.LINE_STRIP, 0, 7);
+// gl.drawArrays(gl.LINE_STRIP, 0, 7);
 
