@@ -1,0 +1,19 @@
+#canvas-container {
+  position: relative;
+}
+
+#canvas {
+  border: 1px solid black; /* untuk keperluan visualisasi canvas */
+}
+
+#gameOver {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: red; /* Ubah warna teks jika diinginkan */
+  font-size: 50px; /* Atur ukuran font */
+  display: none;
+}
+
+
